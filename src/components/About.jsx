@@ -61,7 +61,7 @@ const About = () => {
 
         <img
           src={image}
-          className="w-[300px] md:w-[400px] rounded-full hover:shadow-2xl hover:shadow-blue-800 hover:scale-105 hover:rotate-2 transition-all duration-500"
+          className="w-[300px] md:w-[400px] rounded-full hover:shadow-2xl hover:shadow-blue-800 hover:scale-105 hover:rotate-2 transition-all duration-500 mt-[100px] md:mt-0"
           alt=""
         />
       </motion.div>
