@@ -41,7 +41,7 @@ const Projects = () => {
           <div
             key={project.id}
             target="_blank"
-            className="flex flex-col rounded-xl overflow-hidden cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:sahdow-blue-800"
+            className="flex flex-col rounded-xl overflow-hidden cursor-pointer transition-all duration-300 md:hover:scale-105 hover:shadow-2xl hover:sahdow-blue-800"
           >
             <Slider {...sliderSettings}>
               {project.images.map((img, i) => (
@@ -53,7 +53,7 @@ const Projects = () => {
                 />
               ))}
             </Slider>
-            <div className="flex flex-col gap-3 bg-gray-900 p-5 transition-colors duration-300 hover:bg-gray-800 flex-grow">
+            <div className="flex flex-col gap-3 bg-gray-900 p-5 transition-colors duration-300 md:hover:bg-gray-800 flex-grow">
               <h3 className="text-xl font-semibold">{project.title}</h3>
               <p className="text-sm text-slate-400">{project.description}</p>
               <a
