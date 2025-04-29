@@ -43,6 +43,8 @@ import rs3 from "../public/retno/3.jpg";
 import rs4 from "../public/retno/4.jpg";
 import rs5 from "../public/retno/5.jpg";
 import rs6 from "../public/retno/6.jpg";
+import vrac1 from "../public/vrac/1.jpeg";
+import vrac2 from "../public/vrac/2.jpeg";
 
 export const projectData = [
   {
@@ -133,5 +135,14 @@ export const projectData = [
       "Rumah Batik Retnosari is a desktop application built using Java and NetBeans to help manage store operations. It includes features for managing master data (customers, suppliers, products) and handling key transactions such as purchases, sales, and orders.",
     link: "https://github.com/DaffaAfifi/retnosari-app",
     technologies: ["Java", "Netbeans"],
+  },
+  {
+    id: 10,
+    images: [vrac1, vrac2],
+    title: "Post Stroke Therapy Bikes",
+    description:
+      "Post Stroke Therapy Bikes is a VR simulator game designed for post-stroke rehabilitation. It aims to support patients in their recovery through immersive and interactive cycling therapy experiences.",
+    link: "",
+    technologies: [],
   },
 ];
