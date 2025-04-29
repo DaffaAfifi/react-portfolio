@@ -37,6 +37,12 @@ import sp2 from "../public/studentportal/1.jpg";
 import sp3 from "../public/studentportal/3.jpg";
 import sp4 from "../public/studentportal/4.jpg";
 import sp5 from "../public/studentportal/5.jpg";
+import rs1 from "../public/retno/1.jpg";
+import rs2 from "../public/retno/2.jpg";
+import rs3 from "../public/retno/3.jpg";
+import rs4 from "../public/retno/4.jpg";
+import rs5 from "../public/retno/5.jpg";
+import rs6 from "../public/retno/6.jpg";
 
 export const projectData = [
   {
@@ -118,5 +124,14 @@ export const projectData = [
       "Student Portal API is a RESTful service built with Golang (Gin framework) and PostgreSQL. It provides endpoints for managing student-related operations, including user registration, authentication, and student data management.",
     link: "https://github.com/DaffaAfifi/golang-rg-stuff/tree/main/database%20management/fcp-database-management-v2",
     technologies: ["Gin", "Golang", "PostgreSQL"],
+  },
+  {
+    id: 9,
+    images: [rs1, rs2, rs3, rs4, rs5, rs6],
+    title: "Rumah Batik Retnosari",
+    description:
+      "Rumah Batik Retnosari is a desktop application built using Java and NetBeans to help manage store operations. It includes features for managing master data (customers, suppliers, products) and handling key transactions such as purchases, sales, and orders.",
+    link: "https://github.com/DaffaAfifi/retnosari-app",
+    technologies: ["Java", "Netbeans"],
   },
 ];
