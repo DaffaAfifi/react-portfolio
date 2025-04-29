@@ -24,6 +24,7 @@ import pt5 from "../public/panjitravel/5.jpg";
 import ele1 from "../public/elegame/1.jpg";
 import ele2 from "../public/elegame/2.jpg";
 import ele3 from "../public/elegame/3.jpg";
+import ele4 from "../public/elegame/4.jpg";
 import sm1 from "../public/smarthome/1.jpg";
 import sm2 from "../public/smarthome/2.jpg";
 import tt from "../public/tasktracker/1.jpg";
@@ -31,11 +32,16 @@ import tt2 from "../public/tasktracker/2.jpg";
 import tt3 from "../public/tasktracker/3.jpg";
 import tt4 from "../public/tasktracker/4.jpg";
 import tt5 from "../public/tasktracker/5.jpg";
+import sp1 from "../public/studentportal/2.jpg";
+import sp2 from "../public/studentportal/1.jpg";
+import sp3 from "../public/studentportal/3.jpg";
+import sp4 from "../public/studentportal/4.jpg";
+import sp5 from "../public/studentportal/5.jpg";
 
 export const projectData = [
   {
     id: 1,
-    images: [ele1, ele2, ele3],
+    images: [ele1, ele2, ele3, ele4],
     title: "Efootball Account Ecommerce (Elegame) - On Development",
     description:
       "Elegame is an e-commerce platform for buying and selling Efootball accounts, featuring account listings, budget-based filters, and a dashboard for managing sales and analytics.",
@@ -51,11 +57,11 @@ export const projectData = [
     link: "https://github.com/smart-tourism/web",
     technologies: [
       "NextJs",
+      "React",
       "TypeScript",
       "Prisma",
       "MySQL",
       "Tailwind",
-      "React",
     ],
   },
   {
@@ -102,6 +108,15 @@ export const projectData = [
     description:
       "Task Tracker Plus is a productivity app designed to help students manage their study schedules more effectively. Built with Go (Golang) and PostgreSQL, it enables users to organize tasks, set deadlines, and stay on top of their academic goals.",
     link: "https://github.com/DaffaAfifi/golang-rg-stuff/tree/main/web%20application/fcp-web-application-v2",
+    technologies: ["Gin", "Golang", "PostgreSQL", "Bootstrap"],
+  },
+  {
+    id: 8,
+    images: [sp1, sp2, sp3, sp4, sp5],
+    title: "Student Portal API",
+    description:
+      "Student Portal API is a RESTful service built with Golang (Gin framework) and PostgreSQL. It provides endpoints for managing student-related operations, including user registration, authentication, and student data management.",
+    link: "https://github.com/DaffaAfifi/golang-rg-stuff/tree/main/database%20management/fcp-database-management-v2",
     technologies: ["Gin", "Golang", "PostgreSQL"],
   },
 ];
