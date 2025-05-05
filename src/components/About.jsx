@@ -35,12 +35,13 @@ const About = () => {
           </h3>
 
           <p className="text-sm text-slate-400 text-center md:text-left text-pretty">
-            Experienced web developer with a strong focus on backend development
-            using Node.js and Golang, and practical frontend experience with
-            React. Proficient in fullstack projects using Laravel and Next.js.
-            Skilled in building scalable systems, integrating modern UI/UX, and
-            maintaining application performance. Continuously learning and
-            adapting to evolving web technologies and best practices.
+            Experienced web developer with solid expertise in fullstack projects
+            using Laravel and Next.js, combined with a strong focus on backend
+            development using Node.js and Golang, and practical frontend
+            experience with React. Skilled in building scalable systems,
+            integrating modern UI/UX, and maintaining application performance.
+            Continuously learning and adapting to evolving web technologies and
+            best practices.
           </p>
 
           <div className="flex gap-5 mt-3">
