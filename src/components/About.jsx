@@ -38,7 +38,7 @@ const About = () => {
             Experienced web developer with solid expertise in fullstack projects
             using Laravel and Next.js, combined with a strong focus on backend
             development using Node.js and Golang, and practical frontend
-            experience with React. Skilled in building scalable systems,
+            experience with React and Vue. Skilled in building scalable systems,
             integrating modern UI/UX, and maintaining application performance.
             Continuously learning and adapting to evolving web technologies and
             best practices.
