@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { BiLogoGithub, BiLogoLinkedin, BiLogoYoutube } from "react-icons/bi";
-import image from "../../public/me.jpg";
+import image from "../../public/me2.png";
 
 const About = () => {
   return (
     <div
-      className="mx-auto max-w-6xl w-full min-h-screen p-4 md:p-8 lg:p-28 flex items-center justify-center"
+      className="mx-auto max-w-6xl w-full min-h-screen px-6 py-20 sm:px-10 sm:py-28 lg:px-16 flex items-center justify-center"
       id="about"
     >
       <motion.div
@@ -13,38 +13,50 @@ const About = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="flex flex-col-reverse items-center justify-center md:flex-row gap-8 md:gap-16 lg:gap-24"
+        className="flex w-full flex-col-reverse items-center justify-between gap-12 md:flex-row md:gap-16 lg:gap-20"
       >
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex flex-col items-center md:items-start justify-center gap-3"
+          className="flex max-w-2xl flex-col items-center justify-center gap-4 md:items-start"
         >
-          <span className="px-2 py-1 text-white bg-zinc-800 rounded-full text-xs md:text-sm">
-            Open to hire
-          </span>
+          {/* <span className="rounded-full border border-slate-700 bg-slate-900/60 px-3 py-1 text-xs text-slate-300 sm:text-sm">
+            Open to Opportunities
+          </span> */}
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold text-center md:text-left bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 text-transparent bg-clip-text">
+          <h1 className="text-center text-5xl font-semibold tracking-tight bg-gradient-to-r from-blue-600 via-sky-500 to-blue-400 text-transparent bg-clip-text md:text-left md:text-6xl lg:text-7xl">
             Daffa Afifi
           </h1>
 
-          <h3 className="text-xl md:text-2xl lg:text-3xl font-light text-center md:text-left bg-gradient-to-r from-blue-400 via-sky-400 to-blue-600 text-transparent bg-clip-text">
-            Web Developer
+          <h3 className="text-center text-xl font-light text-sky-300 md:text-left md:text-2xl lg:text-3xl">
+            System Analyst
           </h3>
 
-          <p className="text-sm text-slate-400 text-center md:text-left text-pretty">
-            Experienced web developer with solid expertise in fullstack projects
-            using Laravel and Next.js, combined with a strong focus on backend
-            development using Node.js and Golang, and practical frontend
-            experience with React and Vue. Skilled in building scalable systems,
-            integrating modern UI/UX, and maintaining application performance.
-            Continuously learning and adapting to evolving web technologies and
-            best practices.
+          <p className="max-w-xl text-center text-sm leading-7 text-slate-400 md:text-left sm:text-base">
+            An IT professional bridging business needs and technical solutions
+            through system analysis, requirements engineering, and system
+            integration. Combines analytical thinking with hands-on development
+            experience to turn complex requirements into practical solutions.
           </p>
 
-          <div className="flex gap-5 mt-3">
+          <div className="flex flex-wrap justify-center gap-2 md:justify-start">
+            {[
+              "Requirements Engineering",
+              "Software Development",
+              "Database & Data Modeling",
+            ].map((skill) => (
+              <span
+                key={skill}
+                className="rounded-full border border-slate-700/80 px-3 py-1.5 text-xs text-slate-300"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+
+          <div className="mt-2 flex gap-5">
             <a href="https://github.com/DaffaAfifi" target="_blank">
               <BiLogoGithub className="text-2xl md:text-3xl text-white cursor-pointer hover:scale-110 hover:text-indigo-500 hover:rotate-12 transition-all duration-300 ease-in-out"></BiLogoGithub>
             </a>
@@ -62,8 +74,8 @@ const About = () => {
 
         <img
           src={image}
-          className="w-[300px] md:w-[400px] rounded-full hover:shadow-2xl hover:shadow-blue-800 hover:scale-105 hover:rotate-2 transition-all duration-500 mt-[100px] md:mt-0"
-          alt=""
+          className="mt-8 w-[280px] rounded-full transition-all duration-500 hover:scale-105 hover:rotate-2 hover:shadow-2xl hover:shadow-blue-800 sm:w-[320px] md:mt-0 md:w-[380px] lg:w-[400px]"
+          alt="Daffa Afifi"
         />
       </motion.div>
     </div>
