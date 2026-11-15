@@ -268,7 +268,8 @@ const ProjectDetail = ({ slug }) => {
   const sourceProject = projectData.find(
     (project) =>
       getProjectSlug(project) === slug ||
-      slugifyProjectTitle(project.title) === slug,
+      slugifyProjectTitle(project.title) === slug ||
+      String(project.id) === slug,
   );
   const project = sourceProject;
   const caseStudy = project?.caseStudy;

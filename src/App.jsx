@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 import ProjectDetail from "./components/ProjectDetail";
 
 function App() {
-  const projectMatch = window.location.pathname.match(/^\/projects\/([^/]+)$/);
+  const projectMatch = window.location.pathname.match(/^\/projects\/([^/]+)\/?$/);
 
   if (projectMatch) {
     return (
